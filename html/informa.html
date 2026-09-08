@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Informar avistamientos</title>
+    <link rel="stylesheet" type="text/css" href="../mystyle.css">
+</head>
+<body>
+    <header>
+        <h2>Informar avistamientos</h2>
+    </header>
+    <main>
+        <form id="myForm">
+            <div>
+                <label for="tipo">Tipo:</label><br>
+                <select id="tipo" onchange="filtrar()">
+                    <option value="">Seleccione tipo</option> <!---->
+                    <option value="Antiguas">Antiguas</option><!--ej:avestruz-->
+                    <option value="Anseriformes">Anseriformes</option><!--ej:pato-->
+                    <option value="Apodiformes">Apodiformes</option><!--ej:vencejo-->
+                    <option value="Charadiformes">Charadiformes</option><!--ej:gaviota-->
+                    <option value="Ciconiformes">Ciconiformes</option><!--ej:cigueña-->
+                    <option value="Columbiformes">Columbiformes</option><!--ej:paloma-->
+                    <option value="Falconiformes">Falconiformes</option><!--ej:halcon-->
+                    <option value="Galliformes">Galliformes</option><!--ej:gallina-->
+                    <option value="Gruiformes">Gruiformes</option><!--ej:grulla-->
+                    <option value="Passeriformes">Passeriformes</option><!--ej:gorrion-->
+                    <option value="Pelicanoformes">Pelicanoformes</option><!--ej:pelicano-->
+                    <option value="Phoenicopteriformes">Phoenicopteriformes</option><!--ej:flamenco-->                
+                    <option value="Piciformes">Piciformes</option><!--ej:carpintero-->
+                    <option value="Sittaciformes">Psittaciformes</option><!--ej:loro-->
+                    <option value="Sphenisciformes">Sphenisciformes</option><!--ej:pinguino-->
+                    <option value="Strigiformes">Strigiformes</option><!--ej:lechuza-->
+                    <option value="Procellariformes">Procellariformes</option><!--ej:albatroz-->                    
+                    <option value="Podicipediformes">Podicipediformes</option><!--somormujo-->
+                </select>
+            </div>
+            <div>
+                <label for="nombre-ave">Nombre:</label><br>
+                <input type="text" id="nombre-ave">
+            </div>
+            <div>
+                <label for="region">Región:</label><br>
+                <select id="region" onchange="poner_comunas()">
+                    <option value="">Seleccione región</option>
+                    <option value="1">Arica y Parinacota</option>
+                    <option value="2">Tarapacá</option>
+                    <option value="3">Antofagasta</option>
+                    <option value="4">Atacama</option>
+                    <option value="5">Coquimbo</option>
+                    <option value="6">Valparaíso</option>
+                    <option value="7">Metropolitana</option>
+                    <option value="8">Libertador General Bernardo O'Higgins</option>
+                    <option value="9">Maule</option>
+                    <option value="10">Ñuble</option>
+                    <option value="11">Biobío</option>
+                    <option value="12">La Araucanía</option>
+                    <option value="13">Los Ríos</option>
+                    <option value="14">Los Lagos</option>
+                    <option value="15">Aysén del General Carlos Ibáñez del Campo</option>
+                    <option value="16">Magallanes y de la Antártica Chilena</option>
+                </select>
+            </div>
+            <div>
+                <label for="comuna">Comuna:</label><br>
+                <select id="comuna">
+                    <option value="">Seleccione comuna</option>
+                </select>
+            </div>
+            <div>
+                <label for="fecha">Fecha:</label><br>
+                <input type="date" id="fecha">
+            </div>
+            <div>
+                <label for="hora">Hora:</label><br>
+                <div id="linea-hora">
+                    <input type="number" id="hora" min="0" max="23">
+                    <p> hrs</p>
+                </div>
+            </div>
+            <div>
+                <label for="archivo">Foto y/o video:</label><br>
+                <input type="file" id="archivo" multiple accept=".jpg,.jpeg,.png,.mp4" required>
+            </div>
+            <br>
+            <div id="errores">
+            </div>
+            <br>
+            <button class="boton">Informar</button>
+        </form>
+        <dialog id="ventana">
+            <h2>El avistamiento fue registrado</h2><br>
+            <p>(MentiraNoTengoMemoria)</p><br>
+            <a class="boton" href="inicio.html">Inicio</a>
+        </dialog>
+        <br>
+        <br>
+        <a class="boton" href="inicio.html">Atrás</a>
+    </main>
+    <script src="../js/regiones.js"></script>
+    <script src="../js/informa.js"></script>
+</body>
+</html>

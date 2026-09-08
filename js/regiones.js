@@ -1,0 +1,384 @@
+let poner_comunas = () => {
+	let myForm = document.forms["myForm"];
+	let region = myForm["region"].value;
+	let comunas = document.getElementById("comuna");
+	comunas.innerHTML = '<option value="">Seleccione comuna</option>';
+	if (region == 1){
+		comunas.innerHTML += '<option value="arica">Arica</option>';
+		comunas.innerHTML += '<option value="camarones">Camarones</option>'
+		comunas.innerHTML += '<option value="general_lagos">General Lagos</option>'
+		comunas.innerHTML += '<option value="putre">Putre</option>'
+	}
+	if (region == 2) {
+        comunas.innerHTML += '<option value="alto_hospicio">Alto Hospicio</option>';
+        comunas.innerHTML += '<option value="iquique">Iquique</option>';
+        comunas.innerHTML += '<option value="camina">Camiña</option>';
+        comunas.innerHTML += '<option value="colchane">Colchane</option>';
+        comunas.innerHTML += '<option value="huara">Huara</option>';
+        comunas.innerHTML += '<option value="pica">Pica</option>';
+        comunas.innerHTML += '<option value="pozo_almonte">Pozo Almonte</option>';
+    }
+    if (region == 3) {
+        comunas.innerHTML += '<option value="antofagasta">Antofagasta</option>';
+        comunas.innerHTML += '<option value="mejillones">Mejillones</option>';
+        comunas.innerHTML += '<option value="sierra_gorda">Sierra Gorda</option>';
+        comunas.innerHTML += '<option value="taltal">Taltal</option>';
+        comunas.innerHTML += '<option value="calama">Calama</option>';
+        comunas.innerHTML += '<option value="ollague">Ollagüe</option>';
+        comunas.innerHTML += '<option value="san_pedro_de_atacama">San Pedro de Atacama</option>';
+        comunas.innerHTML += '<option value="maria_elena">María Elena</option>';
+        comunas.innerHTML += '<option value="tocopilla">Tocopilla</option>';
+    }
+    if (region == 4) {
+        comunas.innerHTML += '<option value="chanaral">Chañaral</option>';
+        comunas.innerHTML += '<option value="diego_de_almagro">Diego de Almagro</option>';
+        comunas.innerHTML += '<option value="caldera">Caldera</option>';
+        comunas.innerHTML += '<option value="copiapo">Copiapó</option>';
+        comunas.innerHTML += '<option value="tierra_amarilla">Tierra Amarilla</option>';
+        comunas.innerHTML += '<option value="alto_del_carmen">Alto del Carmen</option>';
+        comunas.innerHTML += '<option value="freirina">Freirina</option>';
+        comunas.innerHTML += '<option value="huasco">Huasco</option>';
+        comunas.innerHTML += '<option value="vallenar">Vallenar</option>';
+    }
+    if (region == 5) {
+        comunas.innerHTML += '<option value="canela">Canela</option>';
+        comunas.innerHTML += '<option value="illapel">Illapel</option>';
+        comunas.innerHTML += '<option value="los_vilos">Los Vilos</option>';
+        comunas.innerHTML += '<option value="salamanca">Salamanca</option>';
+        comunas.innerHTML += '<option value="andacollo">Andacollo</option>';
+        comunas.innerHTML += '<option value="coquimbo">Coquimbo</option>';
+        comunas.innerHTML += '<option value="la_higuera">La Higuera</option>';
+        comunas.innerHTML += '<option value="la_serena">La Serena</option>';
+        comunas.innerHTML += '<option value="paihuano">Paihuano</option>';
+        comunas.innerHTML += '<option value="vicuna">Vicuña</option>';
+        comunas.innerHTML += '<option value="combarbala">Combarbalá</option>';
+        comunas.innerHTML += '<option value="monte_patria">Monte Patria</option>';
+        comunas.innerHTML += '<option value="ovalle">Ovalle</option>';
+        comunas.innerHTML += '<option value="punitaqui">Punitaqui</option>';
+        comunas.innerHTML += '<option value="rio_hurtado">Río Hurtado</option>';
+    }
+    if (region == 6) {
+        comunas.innerHTML += '<option value="isla_de_pascua">Isla de Pascua</option>';
+        comunas.innerHTML += '<option value="calle_larga">Calle Larga</option>';
+        comunas.innerHTML += '<option value="los_andes">Los Andes</option>';
+        comunas.innerHTML += '<option value="rinconada">Rinconada</option>';
+        comunas.innerHTML += '<option value="san_esteban">San Esteban</option>';
+        comunas.innerHTML += '<option value="la_ligua">La Ligua</option>';
+        comunas.innerHTML += '<option value="papudo">Papudo</option>';
+        comunas.innerHTML += '<option value="petorca">Petorca</option>';
+        comunas.innerHTML += '<option value="zapallar">Zapallar</option>';
+        comunas.innerHTML += '<option value="cabildo">Cabildo</option>';
+        comunas.innerHTML += '<option value="hijuelas">Hijuelas</option>';
+        comunas.innerHTML += '<option value="la_calera">La Calera</option>';
+        comunas.innerHTML += '<option value="la_cruz">La Cruz</option>';
+        comunas.innerHTML += '<option value="nogales">Nogales</option>';
+        comunas.innerHTML += '<option value="quillota">Quillota</option>';
+        comunas.innerHTML += '<option value="algarrobo">Algarrobo</option>';
+        comunas.innerHTML += '<option value="el_quisco">El Quisco</option>';
+        comunas.innerHTML += '<option value="el_tabo">El Tabo</option>';
+        comunas.innerHTML += '<option value="cartagena">Cartagena</option>';
+        comunas.innerHTML += '<option value="san_antonio">San Antonio</option>';
+        comunas.innerHTML += '<option value="santo_domingo">Santo Domingo</option>';
+        comunas.innerHTML += '<option value="catemu">Catemu</option>';
+        comunas.innerHTML += '<option value="llaillay">Llaillay</option>';
+        comunas.innerHTML += '<option value="panquehue">Panquehue</option>';
+        comunas.innerHTML += '<option value="putaendo">Putaendo</option>';
+        comunas.innerHTML += '<option value="san_felipe">San Felipe</option>';
+        comunas.innerHTML += '<option value="santa_maria">Santa María</option>';
+        comunas.innerHTML += '<option value="casablanca">Casablanca</option>';
+        comunas.innerHTML += '<option value="concon">Concón</option>';
+        comunas.innerHTML += '<option value="juan_fernandez">Juan Fernández</option>';
+        comunas.innerHTML += '<option value="puchuncavi">Puchuncaví</option>';
+        comunas.innerHTML += '<option value="quintero">Quintero</option>';
+        comunas.innerHTML += '<option value="valparaiso">Valparaíso</option>';
+        comunas.innerHTML += '<option value="vina_del_mar">Viña del Mar</option>';
+        comunas.innerHTML += '<option value="limache">Limache</option>';
+        comunas.innerHTML += '<option value="olmue">Olmué</option>';
+        comunas.innerHTML += '<option value="quilpue">Quilpué</option>';
+        comunas.innerHTML += '<option value="villa_alemana">Villa Alemana</option>';
+    }
+    if (region == 7) {
+        comunas.innerHTML += '<option value="colina">Colina</option>';
+        comunas.innerHTML += '<option value="lampa">Lampa</option>';
+        comunas.innerHTML += '<option value="tiltil">Tiltil</option>';
+        comunas.innerHTML += '<option value="pirque">Pirque</option>';
+        comunas.innerHTML += '<option value="puente_alto">Puente Alto</option>';
+        comunas.innerHTML += '<option value="san_jose_de_maipo">San José de Maipo</option>';
+        comunas.innerHTML += '<option value="buin">Buin</option>';
+        comunas.innerHTML += '<option value="calera_de_tango">Calera de Tango</option>';
+        comunas.innerHTML += '<option value="paine">Paine</option>';
+        comunas.innerHTML += '<option value="san_bernardo">San Bernardo</option>';
+        comunas.innerHTML += '<option value="alhue">Alhué</option>';
+        comunas.innerHTML += '<option value="curacavi">Curacaví</option>';
+        comunas.innerHTML += '<option value="maria_pinto">María Pinto</option>';
+        comunas.innerHTML += '<option value="melipilla">Melipilla</option>';
+        comunas.innerHTML += '<option value="san_pedro">San Pedro</option>';
+        comunas.innerHTML += '<option value="cerrillos">Cerrillos</option>';
+        comunas.innerHTML += '<option value="cerro_navia">Cerro Navia</option>';
+        comunas.innerHTML += '<option value="conchali">Conchalí</option>';
+        comunas.innerHTML += '<option value="el_bosque">El Bosque</option>';
+        comunas.innerHTML += '<option value="estacion_central">Estación Central</option>';
+        comunas.innerHTML += '<option value="huechuraba">Huechuraba</option>';
+        comunas.innerHTML += '<option value="independencia">Independencia</option>';
+        comunas.innerHTML += '<option value="la_cisterna">La Cisterna</option>';
+        comunas.innerHTML += '<option value="la_florida">La Florida</option>';
+        comunas.innerHTML += '<option value="la_granja">La Granja</option>';
+        comunas.innerHTML += '<option value="la_pintana">La Pintana</option>';
+        comunas.innerHTML += '<option value="la_reina">La Reina</option>';
+        comunas.innerHTML += '<option value="las_condes">Las Condes</option>';
+        comunas.innerHTML += '<option value="lo_barnechea">Lo Barnechea</option>';
+        comunas.innerHTML += '<option value="lo_espejo">Lo Espejo</option>';
+        comunas.innerHTML += '<option value="lo_prado">Lo Prado</option>';
+        comunas.innerHTML += '<option value="macul">Macul</option>';
+        comunas.innerHTML += '<option value="maipu">Maipú</option>';
+        comunas.innerHTML += '<option value="nunoa">Ñuñoa</option>';
+        comunas.innerHTML += '<option value="pedro_aguirre_cerda">Pedro Aguirre Cerda</option>';
+        comunas.innerHTML += '<option value="penalolen">Peñalolén</option>';
+        comunas.innerHTML += '<option value="providencia">Providencia</option>';
+        comunas.innerHTML += '<option value="pudahuel">Pudahuel</option>';
+        comunas.innerHTML += '<option value="quilicura">Quilicura</option>';
+        comunas.innerHTML += '<option value="quinta_normal">Quinta Normal</option>';
+        comunas.innerHTML += '<option value="recoleta">Recoleta</option>';
+        comunas.innerHTML += '<option value="renca">Renca</option>';
+        comunas.innerHTML += '<option value="santiago">Santiago</option>';
+        comunas.innerHTML += '<option value="san_joaquin">San Joaquín</option>';
+        comunas.innerHTML += '<option value="san_miguel">San Miguel</option>';
+        comunas.innerHTML += '<option value="san_ramon">San Ramón</option>';
+        comunas.innerHTML += '<option value="vitacura">Vitacura</option>';
+        comunas.innerHTML += '<option value="el_monte">El Monte</option>';
+        comunas.innerHTML += '<option value="isla_de_maipo">Isla de Maipo</option>';
+        comunas.innerHTML += '<option value="padre_hurtado">Padre Hurtado</option>';
+        comunas.innerHTML += '<option value="penaflor">Peñaflor</option>';
+        comunas.innerHTML += '<option value="talagante">Talagante</option>';
+    }
+    if (region == 8) {
+        comunas.innerHTML += '<option value="rancagua">Rancagua</option>';
+        comunas.innerHTML += '<option value="codegua">Codegua</option>';
+        comunas.innerHTML += '<option value="coinco">Coinco</option>';
+        comunas.innerHTML += '<option value="coltauco">Coltauco</option>';
+        comunas.innerHTML += '<option value="donihue">Doñihue</option>';
+        comunas.innerHTML += '<option value="graneros">Graneros</option>';
+        comunas.innerHTML += '<option value="las_cabras">Las Cabras</option>';
+        comunas.innerHTML += '<option value="machali">Machalí</option>';
+        comunas.innerHTML += '<option value="malloa">Malloa</option>';
+        comunas.innerHTML += '<option value="mostazal">Mostazal</option>';
+        comunas.innerHTML += '<option value="olivar">Olivar</option>';
+        comunas.innerHTML += '<option value="peumo">Peumo</option>';
+        comunas.innerHTML += '<option value="pichidegua">Pichidegua</option>';
+        comunas.innerHTML += '<option value="quinta_de_tilcoco">Quinta de Tilcoco</option>';
+        comunas.innerHTML += '<option value="rengo">Rengo</option>';
+        comunas.innerHTML += '<option value="requinoa">Requínoa</option>';
+        comunas.innerHTML += '<option value="san_vicente">San Vicente</option>';
+        comunas.innerHTML += '<option value="la_estrella">La Estrella</option>';
+        comunas.innerHTML += '<option value="litueche">Litueche</option>';
+        comunas.innerHTML += '<option value="marchigue">Marchigüe</option>';
+        comunas.innerHTML += '<option value="navidad">Navidad</option>';
+        comunas.innerHTML += '<option value="paredones">Paredones</option>';
+        comunas.innerHTML += '<option value="pichilemu">Pichilemu</option>';
+        comunas.innerHTML += '<option value="chepica">Chépica</option>';
+        comunas.innerHTML += '<option value="chimbarongo">Chimbarongo</option>';
+        comunas.innerHTML += '<option value="lolol">Lolol</option>';
+        comunas.innerHTML += '<option value="nancagua">Nancagua</option>';
+        comunas.innerHTML += '<option value="palmilla">Palmilla</option>';
+        comunas.innerHTML += '<option value="peralillo">Peralillo</option>';
+        comunas.innerHTML += '<option value="placilla">Placilla</option>';
+        comunas.innerHTML += '<option value="pumanque">Pumanque</option>';
+        comunas.innerHTML += '<option value="san_fernando">San Fernando</option>';
+        comunas.innerHTML += '<option value="santa_cruz">Santa Cruz</option>';
+    }
+    if (region == 9) {
+        comunas.innerHTML += '<option value="cauquenes">Cauquenes</option>';
+        comunas.innerHTML += '<option value="chanco">Chanco</option>';
+        comunas.innerHTML += '<option value="pelluhue">Pelluhue</option>';
+        comunas.innerHTML += '<option value="curico">Curicó</option>';
+        comunas.innerHTML += '<option value="hualane">Hualañé</option>';
+        comunas.innerHTML += '<option value="licanten">Licantén</option>';
+        comunas.innerHTML += '<option value="molina">Molina</option>';
+        comunas.innerHTML += '<option value="rauco">Rauco</option>';
+        comunas.innerHTML += '<option value="romeral">Romeral</option>';
+        comunas.innerHTML += '<option value="sagrada_familia">Sagrada Familia</option>';
+        comunas.innerHTML += '<option value="teno">Teno</option>';
+        comunas.innerHTML += '<option value="vichuquen">Vichuquén</option>';
+        comunas.innerHTML += '<option value="colbun">Colbún</option>';
+        comunas.innerHTML += '<option value="linares">Linares</option>';
+        comunas.innerHTML += '<option value="longavi">Longaví</option>';
+        comunas.innerHTML += '<option value="parral">Parral</option>';
+        comunas.innerHTML += '<option value="retiro">Retiro</option>';
+        comunas.innerHTML += '<option value="san_javier">San Javier</option>';
+        comunas.innerHTML += '<option value="villa_alegre">Villa Alegre</option>';
+        comunas.innerHTML += '<option value="yerbas_buenas">Yerbas Buenas</option>';
+        comunas.innerHTML += '<option value="curepto">Curepto</option>';
+        comunas.innerHTML += '<option value="empedrado">Empedrado</option>';
+        comunas.innerHTML += '<option value="maule">Maule</option>';
+        comunas.innerHTML += '<option value="pelarco">Pelarco</option>';
+        comunas.innerHTML += '<option value="pencahue">Pencahue</option>';
+        comunas.innerHTML += '<option value="rio_claro">Río Claro</option>';
+        comunas.innerHTML += '<option value="san_clemente">San Clemente</option>';
+        comunas.innerHTML += '<option value="san_rafael">San Rafael</option>';
+        comunas.innerHTML += '<option value="talca">Talca</option>';
+        comunas.innerHTML += '<option value="constitucion">Constitución</option>';
+    }
+    if (region == 10) {
+        comunas.innerHTML += '<option value="bulnes">Bulnes</option>';
+        comunas.innerHTML += '<option value="chillan_viejo">Chillán Viejo</option>';
+        comunas.innerHTML += '<option value="chillan">Chillán</option>';
+        comunas.innerHTML += '<option value="el_carmen">El Carmen</option>';
+        comunas.innerHTML += '<option value="pemuco">Pemuco</option>';
+        comunas.innerHTML += '<option value="pinto">Pinto</option>';
+        comunas.innerHTML += '<option value="quillon">Quillón</option>';
+        comunas.innerHTML += '<option value="san_ignacio">San Ignacio</option>';
+        comunas.innerHTML += '<option value="yungay">Yungay</option>';
+        comunas.innerHTML += '<option value="cobquecura">Cobquecura</option>';
+        comunas.innerHTML += '<option value="coelemu">Coelemu</option>';
+        comunas.innerHTML += '<option value="ninhue">Ninhue</option>';
+        comunas.innerHTML += '<option value="portezuelo">Portezuelo</option>';
+        comunas.innerHTML += '<option value="quirihue">Quirihue</option>';
+        comunas.innerHTML += '<option value="ranquil">Ranquil</option>';
+        comunas.innerHTML += '<option value="trehuaco">Trehuaco</option>';
+        comunas.innerHTML += '<option value="coihueco">Coihueco</option>';
+        comunas.innerHTML += '<option value="niquen">Ñiquén</option>';
+        comunas.innerHTML += '<option value="san_carlos">San Carlos</option>';
+        comunas.innerHTML += '<option value="san_fabian">San Fabián</option>';
+        comunas.innerHTML += '<option value="san_nicolas">San Nicolás</option>';
+    }
+    if (region == 11) {
+        comunas.innerHTML += '<option value="arauco">Arauco</option>';
+        comunas.innerHTML += '<option value="canete">Cañete</option>';
+        comunas.innerHTML += '<option value="contulmo">Contulmo</option>';
+        comunas.innerHTML += '<option value="curanilahue">Curanilahue</option>';
+        comunas.innerHTML += '<option value="lebu">Lebu</option>';
+        comunas.innerHTML += '<option value="los_alamos">Los Álamos</option>';
+        comunas.innerHTML += '<option value="tirua">Tirúa</option>';
+        comunas.innerHTML += '<option value="alto_biobio">Alto Biobío</option>';
+        comunas.innerHTML += '<option value="antuco">Antuco</option>';
+        comunas.innerHTML += '<option value="cabrero">Cabrero</option>';
+        comunas.innerHTML += '<option value="laja">Laja</option>';
+        comunas.innerHTML += '<option value="los_angeles">Los Ángeles</option>';
+        comunas.innerHTML += '<option value="mulchen">Mulchén</option>';
+        comunas.innerHTML += '<option value="nacimiento">Nacimiento</option>';
+        comunas.innerHTML += '<option value="negrete">Negrete</option>';
+        comunas.innerHTML += '<option value="quaco">Quaco</option>';
+        comunas.innerHTML += '<option value="quilleco">Quilleco</option>';
+        comunas.innerHTML += '<option value="san_rosendo">San Rosendo</option>';
+        comunas.innerHTML += '<option value="santa_barbara">Santa Bárbara</option>';
+        comunas.innerHTML += '<option value="tucapel">Tucapel</option>';
+        comunas.innerHTML += '<option value="yumbel">Yumbel</option>';
+        comunas.innerHTML += '<option value="chiguayante">Chiguayante</option>';
+        comunas.innerHTML += '<option value="concepcion">Concepción</option>';
+        comunas.innerHTML += '<option value="coronel">Coronel</option>';
+        comunas.innerHTML += '<option value="florida">Florida</option>';
+        comunas.innerHTML += '<option value="hualpen">Hualpén</option>';
+        comunas.innerHTML += '<option value="hualqui">Hualqui</option>';
+        comunas.innerHTML += '<option value="lota">Lota</option>';
+        comunas.innerHTML += '<option value="penco">Penco</option>';
+        comunas.innerHTML += '<option value="san_pedro_de_la_paz">San Pedro de la Paz</option>';
+        comunas.innerHTML += '<option value="santa_juana">Santa Juana</option>';
+        comunas.innerHTML += '<option value="talcahuano">Talcahuano</option>';
+        comunas.innerHTML += '<option value="tome">Tomé</option>';
+    }
+    if (region == 12) {
+        comunas.innerHTML += '<option value="carahue">Carahue</option>';
+        comunas.innerHTML += '<option value="cholchol">Cholchol</option>';
+        comunas.innerHTML += '<option value="cunco">Cunco</option>';
+        comunas.innerHTML += '<option value="curarrehue">Curarrehue</option>';
+        comunas.innerHTML += '<option value="freire">Freire</option>';
+        comunas.innerHTML += '<option value="galvarino">Galvarino</option>';
+        comunas.innerHTML += '<option value="gorbea">Gorbea</option>';
+        comunas.innerHTML += '<option value="lautaro">Lautaro</option>';
+        comunas.innerHTML += '<option value="loncoche">Loncoche</option>';
+        comunas.innerHTML += '<option value="melipeuco">Melipeuco</option>';
+        comunas.innerHTML += '<option value="nueva_imperial">Nueva Imperial</option>';
+        comunas.innerHTML += '<option value="padre_las_casas">Padre Las Casas</option>';
+        comunas.innerHTML += '<option value="perquenco">Perquenco</option>';
+        comunas.innerHTML += '<option value="pitrufquen">Pitrufquén</option>';
+        comunas.innerHTML += '<option value="pucon">Pucón</option>';
+        comunas.innerHTML += '<option value="saavedra">Saavedra</option>';
+        comunas.innerHTML += '<option value="temuco">Temuco</option>';
+        comunas.innerHTML += '<option value="teodoro_schmidt">Teodoro Schmidt</option>';
+        comunas.innerHTML += '<option value="tolten">Toltén</option>';
+        comunas.innerHTML += '<option value="vilcun">Vilcún</option>';
+        comunas.innerHTML += '<option value="villarrica">Villarrica</option>';
+        comunas.innerHTML += '<option value="angol">Angol</option>';
+        comunas.innerHTML += '<option value="collipulli">Collipulli</option>';
+        comunas.innerHTML += '<option value="curacautin">Curacautín</option>';
+        comunas.innerHTML += '<option value="ercilla">Ercilla</option>';
+        comunas.innerHTML += '<option value="lonquimay">Lonquimay</option>';
+        comunas.innerHTML += '<option value="los_sauces">Los Sauces</option>';
+        comunas.innerHTML += '<option value="lumaco">Lumaco</option>';
+        comunas.innerHTML += '<option value="puren">Purén</option>';
+        comunas.innerHTML += '<option value="renaico">Renaico</option>';
+        comunas.innerHTML += '<option value="traiguen">Traiguén</option>';
+        comunas.innerHTML += '<option value="victoria">Victoria</option>';
+    }
+    if (region == 13) {
+        comunas.innerHTML += '<option value="futrono">Futrono</option>';
+        comunas.innerHTML += '<option value="la_union">La Unión</option>';
+        comunas.innerHTML += '<option value="lago_ranco">Lago Ranco</option>';
+        comunas.innerHTML += '<option value="rio_bueno">Río Bueno</option>';
+        comunas.innerHTML += '<option value="corral">Corral</option>';
+        comunas.innerHTML += '<option value="lanco">Lanco</option>';
+        comunas.innerHTML += '<option value="los_lagos">Los Lagos</option>';
+        comunas.innerHTML += '<option value="mafil">Máfil</option>';
+        comunas.innerHTML += '<option value="mariquina">Mariquina</option>';
+        comunas.innerHTML += '<option value="paillaco">Paillaco</option>';
+        comunas.innerHTML += '<option value="panguipulli">Panguipulli</option>';
+        comunas.innerHTML += '<option value="valdivia">Valdivia</option>';
+    }
+    if (region == 14) {
+        comunas.innerHTML += '<option value="ancud">Ancud</option>';
+        comunas.innerHTML += '<option value="castro">Castro</option>';
+        comunas.innerHTML += '<option value="chonchi">Chonchi</option>';
+        comunas.innerHTML += '<option value="curaco_de_velez">Curaco de Vélez</option>';
+        comunas.innerHTML += '<option value="dalcahue">Dalcahue</option>';
+        comunas.innerHTML += '<option value="puqueldon">Puqueldón</option>';
+        comunas.innerHTML += '<option value="queilen">Queilén</option>';
+        comunas.innerHTML += '<option value="quellon">Quellón</option>';
+        comunas.innerHTML += '<option value="quemchi">Quemchi</option>';
+        comunas.innerHTML += '<option value="quinchao">Quinchao</option>';
+        comunas.innerHTML += '<option value="calbuco">Calbuco</option>';
+        comunas.innerHTML += '<option value="cochamo">Cochamó</option>';
+        comunas.innerHTML += '<option value="fresia">Fresia</option>';
+        comunas.innerHTML += '<option value="frutillar">Frutillar</option>';
+        comunas.innerHTML += '<option value="los_muermos">Los Muermos</option>';
+        comunas.innerHTML += '<option value="llanquihue">Llanquihue</option>';
+        comunas.innerHTML += '<option value="puerto_montt">Puerto Montt</option>';
+        comunas.innerHTML += '<option value="puerto_varas">Puerto Varas</option>';
+        comunas.innerHTML += '<option value="osorno">Osorno</option>';
+        comunas.innerHTML += '<option value="puerto_octay">Puerto Octay</option>';
+        comunas.innerHTML += '<option value="purranque">Purranque</option>';
+        comunas.innerHTML += '<option value="puyehue">Puyehue</option>';
+        comunas.innerHTML += '<option value="rio_negro">Río Negro</option>';
+        comunas.innerHTML += '<option value="san_juan_de_la_costa">San Juan de la Costa</option>';
+        comunas.innerHTML += '<option value="san_pablo">San Pablo</option>';
+        comunas.innerHTML += '<option value="chaiten">Chaitén</option>';
+        comunas.innerHTML += '<option value="futaleufu">Futaleufú</option>';
+        comunas.innerHTML += '<option value="hualaihue">Hualaihué</option>';
+        comunas.innerHTML += '<option value="palena">Palena</option>';
+    }
+    if (region == 15) {
+        comunas.innerHTML += '<option value="aysen">Aysén</option>';
+        comunas.innerHTML += '<option value="cisnes">Cisnes</option>';
+        comunas.innerHTML += '<option value="guaitecas">Guaitecas</option>';
+        comunas.innerHTML += '<option value="cochrane">Cochrane</option>';
+        comunas.innerHTML += '<option value="ohiggins">O\'Higgins</option>';
+        comunas.innerHTML += '<option value="tortel">Tortel</option>';
+        comunas.innerHTML += '<option value="coyhaique">Coyhaique</option>';
+        comunas.innerHTML += '<option value="lago_verde">Lago Verde</option>';
+        comunas.innerHTML += '<option value="chile_chico">Chile Chico</option>';
+        comunas.innerHTML += '<option value="rio_ibanez">Río Ibáñez</option>';
+    }
+    if (region == 16) {
+        comunas.innerHTML += '<option value="antartica">Antártica</option>';
+        comunas.innerHTML += '<option value="cabo_de_hornos">Cabo de Hornos</option>';
+        comunas.innerHTML += '<option value="laguna_blanca">Laguna Blanca</option>';
+        comunas.innerHTML += '<option value="navarino">Navarino</option>';
+        comunas.innerHTML += '<option value="punta_arenas">Punta Arenas</option>';
+        comunas.innerHTML += '<option value="rio_verde">Río Verde</option>';
+        comunas.innerHTML += '<option value="san_gregorio">San Gregorio</option>';
+        comunas.innerHTML += '<option value="porvenir">Porvenir</option>';
+        comunas.innerHTML += '<option value="primavera">Primavera</option>';
+        comunas.innerHTML += '<option value="timaukel">Timaukel</option>';
+        comunas.innerHTML += '<option value="natales">Natales</option>';
+        comunas.innerHTML += '<option value="torres_del_paine">Torres del Paine</option>';
+    }
+}

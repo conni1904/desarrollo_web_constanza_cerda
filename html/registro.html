@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registro Voluntario</title>
+    <link rel="stylesheet" type="text/css" href="../mystyle.css">
+</head>
+<body>
+    <header>
+        <h2>Registro Voluntario</h2>
+    </header>
+    <main>
+        <form id="myForm">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="rut">Rut:</label><br>
+                <input type="text" id="rut" placeholder="Sin puntos, con guion, 11111111-1">
+            </div>
+            <div>
+                <label for="telefono">Telefono:</label><br>
+                <input type="number" id="telefono">
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email">
+            </div>
+            <div>
+                <label for="region">Región:</label><br>
+                <select id="region" onchange="poner_comunas()">
+                    <option value="">Seleccione región</option>
+                    <option value="1">Arica y Parinacota</option>
+                    <option value="2">Tarapacá</option>
+                    <option value="3">Antofagasta</option>
+                    <option value="4">Atacama</option>
+                    <option value="5">Coquimbo</option>
+                    <option value="6">Valparaíso</option>
+                    <option value="7">Metropolitana</option>
+                    <option value="8">Libertador General Bernardo O'Higgins</option>
+                    <option value="9">Maule</option>
+                    <option value="10">Ñuble</option>
+                    <option value="11">Biobío</option>
+                    <option value="12">La Araucanía</option>
+                    <option value="13">Los Ríos</option>
+                    <option value="14">Los Lagos</option>
+                    <option value="15">Aysén del General Carlos Ibáñez del Campo</option>
+                    <option value="16">Magallanes y de la Antártica Chilena</option>
+                </select>
+            </div>
+            <div>
+                <label for="comuna">Comuna:</label><br>
+                <select id="comuna">
+                    <option value="">Seleccione comuna</option>
+                </select>
+            </div>
+            <div>
+                <label for="calle">Calle:</label><br>
+                <input type="text" id="calle">
+            </div>
+            <div>
+                <label for="numero">Número:</label><br>
+                <input type="number" id="numero">
+            </div>
+            <div>
+                <label for="apartamento">Apartamento:</label><br>
+                <input type="text" id="apartamento" placeholder="Solo si es necesario">
+            </div>
+            <br>
+            <div id="errores">
+            </div>
+            <br>
+            <button class="boton">Registrarse</button>
+        </form>
+        <dialog id="ventana">
+            <h2>Estas registrado con exito</h2><br>
+            <p>(MentiraNoTengoMemoria)</p><br>
+            <a class="boton" href="inicio.html">Inicio</a>
+        </dialog>
+        <br>
+        <br>
+        <a class="boton" href="inicio.html">Atrás</a>
+    </main>
+    <script src="../js/regiones.js"></script>
+    <script src="../js/registro.js"></script>
+</body>
+</html>

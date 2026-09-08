@@ -1,0 +1,59 @@
+html {
+    background-color: rgb(255, 253, 227) ;
+}
+header {
+    background-color: rgb(177, 207, 177);
+    width: 1200px;
+    height: 80px;
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    color: rgb(86, 113, 97);
+}
+var {
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    border: 1px solid white;
+    background-color: rgb(86, 113, 97);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+}
+
+h2 {
+    color: rgb(86, 113, 97);
+}
+#linea-hora {
+    display: flex;
+}
+p {
+    margin: 0;
+}
+input {
+    width: 200px;
+}
+select {
+    width: 210px;
+}
+#errores {
+    background-color: red;
+    color: white;
+}
+.boton-triangulo{
+    color:rgb(86, 113, 97);
+}
+#paginas {
+    display: flex;
+    align-items: center;
+}
+.img-lista {
+    height: 100px;
+}

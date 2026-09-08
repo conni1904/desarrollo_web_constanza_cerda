@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Listado de avistamientos</title>
+    <link rel="stylesheet" type="text/css" href="../mystyle.css">
+</head>
+<body>
+    <header>
+        <h2>Listado de avistamientos</h2>
+    </header>
+    <main>
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" onchange="filtrar()">
+            <option value="">Seleccione tipo</option> <!---->
+            <option value="Antiguas">Antiguas</option><!--ej:avestruz-->
+            <option value="Anseriformes">Anseriformes</option><!--ej:pato-->
+            <option value="Apodiformes">Apodiformes</option><!--ej:vencejo-->
+            <option value="Charadiformes">Charadiformes</option><!--ej:gaviota-->
+            <option value="Ciconiformes">Ciconiformes</option><!--ej:cigueña-->
+            <option value="Columbiformes">Columbiformes</option><!--ej:paloma-->
+            <option value="Falconiformes">Falconiformes</option><!--ej:halcon-->
+            <option value="Galliformes">Galliformes</option><!--ej:gallina-->
+            <option value="Gruiformes">Gruiformes</option><!--ej:grulla-->
+            <option value="Passeriformes">Passeriformes</option><!--ej:gorrion-->
+            <option value="Pelicanoformes">Pelicanoformes</option><!--ej:pelicano-->
+            <option value="Phoenicopteriformes">Phoenicopteriformes</option><!--ej:flamenco-->                
+            <option value="Piciformes">Piciformes</option><!--ej:carpintero-->
+            <option value="Sittaciformes">Psittaciformes</option><!--ej:loro-->
+            <option value="Sphenisciformes">Sphenisciformes</option><!--ej:pinguino-->
+            <option value="Strigiformes">Strigiformes</option><!--ej:lechuza-->
+            <option value="Procellariformes">Procellariformes</option><!--ej:albatroz-->                    
+            <option value="Podicipediformes">Podicipediformes</option><!--somormujo-->
+        </select>
+        <table border="1" id="miTabla">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Nombre</th>
+                    <th>Lugar <button class="boton-triangulo" onclick="ordenar_lugar(true)">&#9650</button> <button class="boton-triangulo" onclick="ordenar_lugar(false)">&#9660</button></th>
+                    <th>Fecha <button class="boton-triangulo" onclick="ordenar_fecha(true)">&#9650</button> <button class="boton-triangulo" onclick="ordenar_fecha(false)">&#9660</button></th>
+                    <th>Foto o video</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+        <div id="paginas">
+            <button class="boton" onclick="anterior()">Anterior</button>
+            <p id="pagina"></p>
+            <button class="boton" onclick="siguiente()">Siguiente</button>
+        </div>
+        <br>
+        <br>
+         <a class="boton atras" href="inicio.html">Atrás</a>
+    </main>
+    <script src="../js/listado.js"></script>
+</body>
+</html>
